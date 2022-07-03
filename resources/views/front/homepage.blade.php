@@ -58,24 +58,24 @@
         <div class="container px-4 py-5 bg-light ">
             <h2 class="pb-2 text-center">Kenapa Beli Dari Mobil BOS</h2>
             <div class="row g-3 py-5 row-cols-1 row-cols-lg-4">
-                <div class="col-2">
+                <div class="col-md-3">
                     <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
                     <h6 class="mb-4 fw-bold text-center">Garansi 30 hari</h6>
                     <p>semua mobil bekas bersertifikasi Mobil BOS dijual dengan harga terbaik cash maupun cicilan. tidak perlu takut membayar kemahalan.</p>
                 </div>
-                <div class="col-2">
+                <div class="col-md-3">
                     <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
                     <h6 class="mb-4 fw-bold text-center">Hemat, Aman, Bersertifikasi & Terpercaya</h6>
                     <p>semua mobil bekas bersertifikasi Mobil BOS dengan harga terbaik cash maupun cicilan</p>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-3">
                     <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
                     <h6 class="mb-4 fw-bold text-center">Sekaligus bisa service berkala di cabang Bengkel BOS</h6>
                     <p>semua mobil bekas bersertifikasi Mobil BOS dengan harga terbaik cash maupun cicilan</p>
                 </div>
 
-                <div class="col-2">
+                <div class="col-md-3">
                     <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
                     <h6 class="mb-4 fw-bold text-center">Hemat, Aman, Bersertifikasi & Terpercaya</h6>
                     <p>semua mobil bekas bersertifikasi Mobil BOS dengan harga terbaik cash maupun cicilan</p>
@@ -92,7 +92,7 @@
             <div class="container">
                 <div class="row row-cols-sm-4 row-cols-sm-2 g-1">
                     <div class="col">
-                        @foreach($sect3 as $items)
+                        @foreach($sect4 as $items)
                             <div class="card h-100">
                                 <img src="{{$items->image}}" height="140">
                                 <div class="card-body">
@@ -111,69 +111,29 @@
         </div>
     </section>
 
+    
     <section class="section-5">
         <div class="col-sm-10 p-xs mx-auto my-1">
-            <h3 class="text-left border-bottom">Mobil keluarga untuk mudik</h3>
+            <h3 class="text-left border-bottom">Mobil matic cocok untuk anak kuliah</h3>
         </div>
         <div class="album py-3 bg-white">
             <div class="container">
                 <div class="row row-cols-sm-4 row-cols-sm-2 g-1">
                     <div class="col">
-                    <div class="card h-100">
-                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
-                        <div class="card-body">
-                        <h5 class="card-title">Porche panamera</h5>
-                        <p class="card-text" style="font-size:12px">
-                            Rp 4.000.000<br>
-                            Automatic<br>
-                            Jakarta Pusat
-                        </p>
-                        </div>
+                        @foreach($sect5 as $items)
+                            <div class="card h-100">
+                                <img src="{{$items->image}}" height="140">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{$items->bName}}  {{$items->mName}} ({{$items->year}})</h5>
+                                    <p class="card-text" style="font-size:12px">
+                                        {{$items->price}} {{$items->priceDiscount}}<br>
+                                        {{$items->tName}}<br>
+                                        {{$items->tName}}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
-                    </div>
-
-                    <div class="col">
-                    <div class="card shadow-sm h-100">
-                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
-                        <div class="card-body">
-                        <h5 class="card-title">Porche panamera</h5>
-                        <p class="card-text" style="font-size:12px">
-                            Rp 4.000.000<br>
-                            Automatic<br>
-                            Jakarta Pusat
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col">
-                    <div class="card shadow-sm h-100">
-                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
-                        <div class="card-body">
-                        <h5 class="card-title">Porche panamera</h5>
-                        <p class="card-text" style="font-size:12px">
-                            Rp 4.000.000<br>
-                            Automatic<br>
-                            Jakarta Pusat
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col">
-                    <div class="card shadow-sm h-100">
-                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
-                        <div class="card-body">
-                        <h5 class="card-title">Porche panamera</h5>
-                        <p class="card-text" style="font-size:12px">
-                            Rp 4.000.000<br>
-                            Automatic<br>
-                            Jakarta Pusat
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-
                 </div>
             </div>
         </div>
