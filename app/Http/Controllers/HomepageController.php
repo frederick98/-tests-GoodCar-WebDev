@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\Banner;
 use App\Models\Car;
 use App\Models\Testimony;
+use App\Models\Brand;
+use App\Models\Location;
+use App\Models\Model;
+use App\Models\Transaction;
+use App\Models\Transmission;
 
 class HomepageController extends Controller
 {
