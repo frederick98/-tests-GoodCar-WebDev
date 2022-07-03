@@ -23,32 +23,163 @@
 @section('content')
     <!-- Section 1 Main Banner -->
     <section class="section-1">
-        <div class="home-banner">
+        <div class="home-banner bgimg-1">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    @foreach($banner as $items)
-                        <li data-target="#carouselExampleIndicators" data-slide-to="{{$items->id}}" class="{{$loop->first? 'active': ''}}"></li>
-                    @endforeach
-                </ol>
-                <div class="carousel-inner">
-                    @foreach($banner as $items)
-                        <div class="carousel-item {{$loop->first? 'active': ''}}">
-                            <a href="{{$items->url}}">
-                                <img src="{{$items->image}}" class="d-block w-100" alt="Sliding Banner Items" >
-                            </a>
-                        </div>
-                    @endforeach
+                <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark" style="padding:128px">
+                    <div class="col-md-6 px-0" style="padding:225px"></div>
+                    <ol class="carousel-indicators">
+                        @foreach($banner as $items)
+                            <li data-target="#carouselExampleIndicators" data-slide-to="{{$items->id}}" class="{{$loop->first? 'active': ''}}"></li>
+                        @endforeach
+                    </ol>
+                    <div class="carousel-inner">
+                        @foreach($banner as $items)
+                            <div class="carousel-item {{$loop->first? 'active': ''}}">
+                                <a href="{{$items->url}}">
+                                    <img src="{{$items->image}}" class="d-block w-100" alt="Sliding Banner Items" >
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
             </div>
         </div>
+    </section>
+
+    <section class="section-3">
+        <div class="container px-4 py-5 bg-light ">
+            <h2 class="pb-2 text-center">Kenapa Beli Dari Mobil BOS</h2>
+            <div class="row g-3 py-5 row-cols-1 row-cols-lg-4">
+                <div class="col-2">
+                    <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
+                    <h6 class="mb-4 fw-bold text-center">Garansi 30 hari</h6>
+                    <p>semua mobil bekas bersertifikasi Mobil BOS dijual dengan harga terbaik cash maupun cicilan. tidak perlu takut membayar kemahalan.</p>
+                </div>
+                <div class="col-2">
+                    <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
+                    <h6 class="mb-4 fw-bold text-center">Hemat, Aman, Bersertifikasi & Terpercaya</h6>
+                    <p>semua mobil bekas bersertifikasi Mobil BOS dengan harga terbaik cash maupun cicilan</p>
+                </div>
+
+                <div class="col-2">
+                    <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
+                    <h6 class="mb-4 fw-bold text-center">Sekaligus bisa service berkala di cabang Bengkel BOS</h6>
+                    <p>semua mobil bekas bersertifikasi Mobil BOS dengan harga terbaik cash maupun cicilan</p>
+                </div>
+
+                <div class="col-2">
+                    <img src="http://www.questauto.com/media/media/on1006/images/1477075764502328.png" width="140">
+                    <h6 class="mb-4 fw-bold text-center">Hemat, Aman, Bersertifikasi & Terpercaya</h6>
+                    <p>semua mobil bekas bersertifikasi Mobil BOS dengan harga terbaik cash maupun cicilan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4">
+        <div class="col-sm-10 p-xs mx-auto my-1">
+            <h3 class="text-left border-bottom">Mobil matic cocok untuk anak kuliah</h3>
+        </div>
+        <div class="album py-3 bg-white">
+            <div class="container">
+                <div class="row row-cols-sm-4 row-cols-sm-2 g-1">
+                    <div class="col">
+                        @foreach($sect3 as $items)
+                            <div class="card h-100">
+                                <img src="{{$items->image}}" height="140">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{$items->bName}}  {{$items->mName}} ({{$items->year}})</h5>
+                                    <p class="card-text" style="font-size:12px">
+                                        {{$items->price}} {{$items->priceDiscount}}<br>
+                                        {{$items->tName}}<br>
+                                        {{$items->tName}}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-5">
+        <div class="col-sm-10 p-xs mx-auto my-1">
+            <h3 class="text-left border-bottom">Mobil keluarga untuk mudik</h3>
+        </div>
+        <div class="album py-3 bg-white">
+            <div class="container">
+                <div class="row row-cols-sm-4 row-cols-sm-2 g-1">
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
+                        <div class="card-body">
+                        <h5 class="card-title">Porche panamera</h5>
+                        <p class="card-text" style="font-size:12px">
+                            Rp 4.000.000<br>
+                            Automatic<br>
+                            Jakarta Pusat
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
+                        <div class="card-body">
+                        <h5 class="card-title">Porche panamera</h5>
+                        <p class="card-text" style="font-size:12px">
+                            Rp 4.000.000<br>
+                            Automatic<br>
+                            Jakarta Pusat
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
+                        <div class="card-body">
+                        <h5 class="card-title">Porche panamera</h5>
+                        <p class="card-text" style="font-size:12px">
+                            Rp 4.000.000<br>
+                            Automatic<br>
+                            Jakarta Pusat
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://tsoimageprod.azureedge.net/sys-master-hybrismedia/h88/hc1/8817657937950/Cara%20Mengoperasikan%20Mobil%20Matic%20untuk%20Pemula%20(1).jpg" height="140">
+                        <div class="card-body">
+                        <h5 class="card-title">Porche panamera</h5>
+                        <p class="card-text" style="font-size:12px">
+                            Rp 4.000.000<br>
+                            Automatic<br>
+                            Jakarta Pusat
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-6">
     </section>
 
 @endsection

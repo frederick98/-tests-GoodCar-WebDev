@@ -1,0 +1,36 @@
+.fixed-top {
+    position: fixed;
+}
+
+.navbar-expand-sm .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 0.25em;
+    background-color: #ffffff;
+    margin: 1px;
+}
+
+.container-fluid {
+    margin-top: 100px;
+}
+
+#le-fluid-de-container {
+    margin-top: 0px;
+}
+
+.nav-bar-item:hover {
+    color: #a9ca31;
+}
+
+.footer footer {
+    padding-top: 32px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    background-color: #2a1b6a;
+}

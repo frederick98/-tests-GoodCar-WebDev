@@ -1,0 +1,12 @@
+.jumbotron {
+    background-color: #252525; /* green? */
+    color: #252525; /* font color black */
+    padding: 100px 25px;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fback_origin_pic%2F00%2F02%2F39%2Ff5a244fa8da39abeb2064625e2e095ed.jpg&f=1&nofb=1");
+    min-height: 100%;
+}

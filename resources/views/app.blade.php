@@ -14,6 +14,44 @@
 
         <!-- Styling -->
         @yield('css')
+        <style>
+            .fixed-top {
+                position: fixed;
+            }
+
+            .navbar-expand-sm .navbar-nav {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+
+            .nav-item {
+                text-align: center;
+                padding: 0.25em;
+                background-color: #ffffff;
+                margin: 1px;
+            }
+
+            .container-fluid {
+                margin-top: 100px;
+            }
+
+            #le-fluid-de-container {
+                margin-top: 0px;
+            }
+
+            .nav-bar-item:hover {
+                color: #a9ca31;
+            }
+
+            .footer footer {
+                padding-top: 32px;
+                padding-bottom: 40px;
+                color: #ffffff;
+                background-color: #2a1b6a;
+            }
+        </style>
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
